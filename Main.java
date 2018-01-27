@@ -11,7 +11,9 @@ public class Main {
         //for (int q:  x) {
         //    System.out.println(q);
         //}
-        System.out.println(studentKristoff.solveAMT(120));
+        //System.out.println(studentKristoff.solveAMT(120));
 
+        System.out.println(studentKristoff.FindGCD(25,10));
+        System.out.println(studentKristoff.reverseElquides(5, 3));
     }
 }

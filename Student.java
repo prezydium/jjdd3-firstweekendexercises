@@ -1,5 +1,7 @@
 package com.prezydium;
 
+import java.math.BigInteger;
+
 public class Student {
 
 
@@ -24,7 +26,7 @@ public class Student {
     }
 
     public int solveAMT(int n) {
-        int[] nominal = {500, 200, 100, 50, 20};
+        int[] nominal = {500, 200, 100, 50, 20, 10};
         int howMany = 0;
         int temp;
         for (int i = 0; i < nominal.length; i++){
@@ -39,5 +41,36 @@ public class Student {
         return howMany;
     }
 
+        public BigInteger[] findInitialNumbers(long divisor, long iterations) {
+            return new BigInteger[] { BigInteger.ZERO, BigInteger.ZERO };
+        }
+
+    public int FindGCD(int a, int b) {
+        int iter = 0;
+        // Swaping `a` and `b`
+        if (a < b) {
+            a += b;
+            b = a - b;
+            a = a - b;
+        }
+
+        while (b > 0) {
+            int c = a % b;
+            a = b;
+            b = c;
+            iter++;
+        }
+        System.out.println(iter);
+        // `a` - is greates common divisor now
+        return a;
+    }
+
+    public int reverseElquides(int dzielnik, int iteracje){
+        int x = 0;
+
+        x = dzielnik * iteracje;
+
+        return x;
+    }
 
 }
