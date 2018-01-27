@@ -56,21 +56,26 @@ public class Student {
 
         while (b > 0) {
             int c = a % b;
-            a = b;
-            b = c;
+            a = b; //wieksza
+            b = c; //modulo
             iter++;
         }
         System.out.println(iter);
-        // `a` - is greates common divisor now
+        // `a` - is greatest common divisor now
         return a;
     }
 
     public int reverseElquides(int dzielnik, int iteracje){
-        int x = 0;
-
-        x = dzielnik * iteracje;
-
-        return x;
+        int drugaLiczba = 0;
+        int b;
+        drugaLiczba = dzielnik * iteracje;
+        int c;
+        c = drugaLiczba * 2;
+        for(int i = 1; i < iteracje; i++){
+            c = c  + dzielnik;
+        }
+        System.out.println("pierwsza " + c + " || druga " + drugaLiczba );
+        return drugaLiczba;
     }
 
 }

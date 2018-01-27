@@ -13,7 +13,7 @@ public class Main {
         //}
         //System.out.println(studentKristoff.solveAMT(120));
 
-        System.out.println(studentKristoff.FindGCD(25,10));
-        System.out.println(studentKristoff.reverseElquides(5, 3));
+        System.out.println(studentKristoff.FindGCD(16,6));
+        System.out.println(studentKristoff.reverseElquides(254, 3));
     }
 }
